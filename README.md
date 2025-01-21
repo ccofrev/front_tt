@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # front_tt
-Front para el sistema de control de acceso de Subcargo
+Front para el sistema de control de acceso TT CCofre
 =======
 # Getting Started with Create React App
 
