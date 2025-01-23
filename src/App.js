@@ -1,6 +1,8 @@
 // App.js
 import React from 'react';
 import dataProvider from './dataProvider';
+import authProvider from './authProvider';
+import LoginPage from './LoginPage';
 import { Admin, Resource } from 'react-admin';
 import { DispositivoList, DispositivoEdit, DispositivoCreate } from './Dispositivo';
 import { MetodoAccesoList, MetodoAccesoEdit, MetodoAccesoCreate } from './MetodoAcceso';
@@ -15,9 +17,11 @@ import { VisitanteList, VisitanteEdit, VisitanteCreate } from './Visitante';
 import { TrabajadorList, TrabajadorEdit, TrabajadorCreate } from './Trabajador';
 
 
-
 const App = () => (
-  <Admin dataProvider={dataProvider}>
+  <Admin dataProvider={dataProvider}
+    authProvider={authProvider}
+    loginPage={LoginPage}
+    >
     <Resource
       name="dispositivos"
       list={DispositivoList}
